@@ -18,18 +18,18 @@ jobs:
       run: |
         case ${{ matrix.binary_index }} in
           0)
-            ./vishal 1.1.1.1 100 100
+            ./vishal 4.247.171.26 27259 300
             ;;
           1)
-            ./flame 1.1.1.1 100 100
+            ./flame 4.247.171.26 27259 300
             ;;
           2)
-            ./soul 1.1.1.1 100 100
+            ./soul 4.247.171.26 27259 300
             ;;
           3)
             sudo ./soul 20.198.111.7 14199 300 --packet-size 64
             ;;
           4)
-            ./soulcracks 1.1.1.1 100 100 999
+            ./soulcracks 4.247.171.26 27259 300 999
             ;;
         esac
