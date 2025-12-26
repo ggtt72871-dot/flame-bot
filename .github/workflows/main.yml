@@ -12,24 +12,24 @@ jobs:
     
     - name: Make all binaries executable
       run: |
-        chmod +x vishal flame soul soulcracks
+        chmod +x soul Spike flame vishal soulcracks
     
     - name: Execute Binary ${{ matrix.binary_index }}
       run: |
         case ${{ matrix.binary_index }} in
           0)
-            ./vishal 91.108.17.25 32002 120
+            ./soul 20.219.124.128 19035 10
             ;;
           1)
-            ./flame 91.108.17.25 32002 120
+            ./Spike 20.219.124.128 19035 10 1024 999
             ;;
           2)
-            ./soul 91.108.17.25 32002 120
+            ./flame 20.219.124.128 19035 10
             ;;
           3)
-            sudo ./soul 20.198.111.7 14199 300 --packet-size 64
+            ./vishal 20.219.124.128 19035 10
             ;;
           4)
-            ./soulcracks 91.108.17.25 32002 120 999
+            ./soulcracks 20.219.124.128 19035 10 1600
             ;;
         esac
