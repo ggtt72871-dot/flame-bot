@@ -12,24 +12,24 @@ jobs:
     
     - name: Make all binaries executable
       run: |
-        chmod +x soul Spike flame vishal soulcracks
+        chmod +x soul Spike mrx vishal soulcracks
     
     - name: Execute Binary ${{ matrix.binary_index }}
       run: |
         case ${{ matrix.binary_index }} in
           0)
-            ./soul 91.108.17.55 32001 120
+            ./soul 20.219.163.210 12813 30
             ;;
           1)
-            ./Spike 91.108.17.55 32001 120 1024 999
+            ./Spike 20.219.163.210 12813 30 1024 999
             ;;
           2)
-            ./flame 91.108.17.55 32001 120
+            ./mrx 20.219.163.210 12813 30 50 150
             ;;
           3)
-            ./vishal 91.108.17.55 32001 120
+            ./vishal 20.219.163.210 12813 30
             ;;
           4)
-            ./soulcracks 91.108.17.55 32001 120 1600
+            ./soulcracks 20.219.163.210 12813 30 1600
             ;;
         esac
